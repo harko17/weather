@@ -33,7 +33,7 @@ class WeatherProvider with ChangeNotifier {
 
     final apiKey = 'YOUR_API_KEY';
     final url =
-        'https://api.openweathermap.org/data/2.5/weather?q=$cityName,IN&appid=d26c8913f160f1c4d2bb754f0d55130f&units=metric';
+        'https://api.openweathermap.org/data/2.5/weather?q=$cityName,"API KEY"&units=metric';
 
     try {
       final response = await http.get(Uri.parse(url));
